@@ -46,11 +46,10 @@ async function centraladmin(mail, pass) {
       'Vary': 'Accept',
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ "email": mail, "password": pass, "poll_id": 1 })
+    body: JSON.stringify({ "email": mail, "password": pass, "poll_id": 2 })
   });
   const conn = await rawResponse.json();
   console.log(conn);
-  alert(conn["description"]);
   sessionStorage.setItem("siteAdminData", JSON.stringify(conn));
   window.location.href = 'centraladmin.html';
 }
