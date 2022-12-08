@@ -31,7 +31,7 @@ async function localadmin(mail, pass) {
       'Vary': 'Accept',
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ "email": mail, "password": pass })
+    body: JSON.stringify({ "email": mail, "password": pass, "poll_id": 2 })
   });
   const conn = await rawResponse.json();
   console.log(conn);
