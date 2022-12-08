@@ -22,7 +22,7 @@ btn1.addEventListener("click", async () => {
       'Content-Type': 'application/json',
       'Connection': 'keep-alive'
     },
-    body: JSON.stringify({ "email": mail, "password": pass, "choice": choice, "poll_id": 1 })
+    body: JSON.stringify({ "email": mail, "password": pass, "choice": choice, "poll_id": 2 })
   });
   const conn = await rawResponse.json();
   console.log(conn);
