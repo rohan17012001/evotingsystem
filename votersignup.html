@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vote Here:E-Voting System</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+  <style>
+    .headerFont {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 24px;
+    }
+
+    .subFont {
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+
+    }
+
+    .specialHead {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .normalFont {
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    * {
+      padding: 0;
+      margin: 0
+    }
+
+    .wrapper {
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #eee
+    }
+
+    .checkmark__circle {
+      stroke-dasharray: 166;
+      stroke-dashoffset: 166;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+      stroke: #7ac142;
+      fill: none;
+      animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+    }
+
+    .checkmark {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: block;
+      stroke-width: 2;
+      stroke: #fff;
+      stroke-miterlimit: 10;
+      margin: 10% auto;
+      box-shadow: inset 0px 0px 0px #7ac142;
+      animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+    }
+
+    .checkmark__check {
+      transform-origin: 50% 50%;
+      stroke-dasharray: 48;
+      stroke-dashoffset: 48;
+      animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+    }
+
+    @keyframes stroke {
+      100% {
+        stroke-dashoffset: 0
+      }
+    }
+
+    @keyframes scale {
+
+      0%,
+      100% {
+        transform: none
+      }
+
+      50% {
+        transform: scale3d(1.1, 1.1, 1)
+      }
+    }
+
+    @keyframes fill {
+      100% {
+        box-shadow: inset 0px 0px 0px 30px #7ac142
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse
+    " role="navigation">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand headerFont text-lg"><strong>E-Voting System</strong></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="example-nav-collapse">
+          <ul class="nav navbar-nav">
+          </ul>
+          <span class="normalFont"><a href="administrator.html"
+              class="btn btn-success navbar-right navbar-btn"><strong>Admin Login</strong></a></span>
+        </div>
+
+      </div> <!-- end of container -->
+    </nav>
+
+    <div class="container" style="padding:100px;">
+      <div class="row">
+        <div class="col-sm-12" style="border:2px solid gray;">
+          <div class="voterr" id="voterr">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <cen>
+            <h4 class="specialHead">Project By:</h4>
+          </cen>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-6 text-center">
+          <h4 class="specialHead">Ayushman Bajpayee</h4>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <h4 class="specialHead">Ravi Maurya</h4>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <h4 class="specialHead">Maurya Abhishek Kumar</h4>
+        </div>
+        <div class="col-md-3 col-6 text-center">
+          <h4 class="specialHead">Rohan</h4>
+        </div>
+        <div class="col-12 text-center">
+          <h4 class="specialHead">Jasmeet Chhabra</h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script>
+    
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="vault.js"></script>
+</body>
+
+</html>
